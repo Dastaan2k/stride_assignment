@@ -71,7 +71,7 @@ class _HighlightsCardState extends State<HighlightsCard> {
                   onTap: () {
                     setState(() => _isFavorite = !_isFavorite);
                   },
-                  child: _isFavorite ? Icon(Icons.favorite) : Icon(Icons.favorite_border)
+                  child: _isFavorite ? const Icon(Icons.favorite) : const Icon(Icons.favorite_border)
                 )
               ],
             ),
