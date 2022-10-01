@@ -13,23 +13,25 @@ class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
-      child: ListView(
-        children: const [
-          SizedBox(height: StrideConstants.defaultSpacing),
-          Padding(
-            padding: EdgeInsets.symmetric(horizontal: StrideConstants.defaultSpacing),
-            child: StrideTextField(),
-          ),
-          SizedBox(height: StrideConstants.defaultSpacing),
-          HighlightsWidget(),
-          SizedBox(height: StrideConstants.defaultSpacing * 1.75),
-          CarouselWidget(),
-          SizedBox(height: StrideConstants.defaultSpacing * 1.75),
-          CategoriesWidget(),
-          SizedBox(height: StrideConstants.defaultSpacing * 1.75),
-          BottomWidget(),
-          SizedBox(height: StrideConstants.defaultSpacing * 1.75),
-        ],
+      child: SafeArea(
+        child: ListView(
+          children: const [
+            SizedBox(height: StrideConstants.defaultSpacing),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: StrideConstants.defaultSpacing),
+              child: StrideTextField(),
+            ),
+            SizedBox(height: StrideConstants.defaultSpacing),
+            HighlightsWidget(),
+            SizedBox(height: StrideConstants.defaultSpacing * 1.75),
+            CarouselWidget(),
+            SizedBox(height: StrideConstants.defaultSpacing * 1.75),
+            CategoriesWidget(),
+            SizedBox(height: StrideConstants.defaultSpacing * 1.75),
+            BottomWidget(),
+            SizedBox(height: StrideConstants.defaultSpacing * 1.75),
+          ],
+        ),
       )
     );
   }
